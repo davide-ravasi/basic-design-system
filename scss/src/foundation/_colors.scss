@@ -27,10 +27,33 @@ $btn-primary-bg-hover: var(--dse-btn-primary-bg-hover, $green-light) !default;
 $form-border-color: var(--dse-form-border-color, $white-dark) !default;
 $form-bg-color: var(--dse-form-bg-color, $white) !default;
 $form-bg-option-selected: var(--dse-form-bg-option-selected, $green) !default;
-$form-color-option-selected: var(--dse-form-color-option-selected, $white) !default;
+$form-color-option-selected: var(
+  --dse-form-color-option-selected,
+  $white
+) !default;
 $form-bg-color-hover: var(--dse-form-bg-color-hover, $white-dark) !default;
 $form-color: var(--dse-form-color, $dark) !default;
 $form-bg: var(--dse-form-bg, $white) !default;
 $form-error-color: var(--dse-form-error-color, $red) !default;
 $form-error-border: var(--dse-form-error-border, $red) !default;
 $form-border-focus-color: var(--dse-form-border-focus-color, $green) !default;
+
+/*=============================================
+=                 App bar                     =
+=============================================*/
+$app-bar-primary-color: var(--dse-app-bar-primary-color, $white) !default;
+$app-bar-secondary-color: var(--dse-app-bar-secondary-color, $dark) !default;
+$app-bar-primary-bg: var(--dse-app-bar-primary-bg, $white) !default;
+$app-bar-secondary-bg: var(--dse-app-bar-secondary-b, $blue) !default;
+$app-bar-elevation-color: var(--dse-app-bar-elevation-color, $dark) !default;
+
+/*=============================================
+=                  FAB                        =
+=============================================*/
+$fab-primary-color: var(--dse-fab-primary-color, $white) !default;
+$fab-primary-bg: var(--dse-fab-primary-bg, $blue) !default;
+$fab-primary-bg-hover: var(--dse-primary-bg-hover, $blue-light) !default;
+$fab-secondary-color: var(--dse-secondary-color, $white) !default;
+$fab-secondary-bg: var(--dse-secondary-bg, $green) !default;
+$fab-secondary-bg-hover: var(--dse-secondary-bg-hover, $green-light) !default;
+$fab-elevation-color: var(--dse-app-bar-elevation-color, $dark) !default;
