@@ -18,6 +18,8 @@ $body-font-family: var(--dse-body-font-family, $playfair) !default;
 
 $body-font-size: var(--dse-body-font-size, $fs-sm) !default;
 $body-font-weight: var(--dse-body-font-weight, $fw-normal) !default;
+$body-line-height: var(--dse-body-font-weight, $fw-normal) !default;
+$body-letter-spacing: var(--dse-body-font-weight, $fw-normal) !default;
 
 /*=============================================
 =            Heading font family              =
@@ -51,8 +53,19 @@ $h-6-font-weight: var(--dse-h6-text-weight, $fw-light) !default;
 =============================================*/
 
 $h-1-letter-spacing: var(--dse-h1-letter-spacing, -#{$spacing[md]}) !default;
-$h-2-letter-spacing: var(--dse-h2-letter-spacing, $fw-semibold) !default;
-$h-3-letter-spacing: var(--dse-h3-letter-spacing, $fw-bold) !default;
-$h-4-letter-spacing: var(--dse-h4-letter-spacing, $fw-medium) !default;
-$h-5-letter-spacing: var(--dse-h5-letter-spacing, $fw-normal) !default;
-$h-6-letter-spacing: var(--dse-h6-letter-spacing, $fw-light) !default;
+$h-2-letter-spacing: var(--dse-h2-letter-spacing, -#{$spacing[xxs]}) !default;
+$h-3-letter-spacing: var(--dse-h3-letter-spacing, #{$spacing[none]}) !default;
+$h-4-letter-spacing: var(--dse-h4-letter-spacing, #{$spacing[xxxs]}) !default;
+$h-5-letter-spacing: var(--dse-h5-letter-spacing, #{$spacing[none]}) !default;
+$h-6-letter-spacing: var(--dse-h6-letter-spacing, #{$spacing[xxxs]}) !default;
+
+/*=============================================
+=            Head line height              =
+=============================================*/
+
+$h-1-line-height: var(--dse-h1-line-height, -map-get($spacing, 'md')) !default;
+$h-2-line-height: var(--dse-h2-line-height, -map-get($spacing, 'xxs')) !default;
+$h-3-line-height: var(--dse-h3-line-height, $fw-bold) !default;
+$h-4-line-height: var(--dse-h4-line-height, $fw-medium) !default;
+$h-5-line-height: var(--dse-h5-line-height, $fw-normal) !default;
+$h-6-line-height: var(--dse-h6-line-height, $fw-light) !default;
