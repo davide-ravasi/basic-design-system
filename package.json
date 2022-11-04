@@ -1,0 +1,11 @@
+{
+  "name": "basic-design-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/davide-ravasi/basic-design-system.git",
+  "author": "davide <info@davideravasi.com>",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
+  }
+}

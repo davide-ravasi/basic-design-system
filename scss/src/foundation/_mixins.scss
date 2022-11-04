@@ -20,4 +20,26 @@
   }
 }
 
-
+@mixin margin($size) {
+  margin: map-get($spacing, $size);
+}
+@mixin margin-top {
+  margin-top: map-get($spacing, $size);
+}
+@mixin margin-left {
+  margin-left: map-get($spacing, $size);
+}
+@mixin margin-right {
+  margin-right: map-get($spacing, $size);
+}
+@mixin margin-bottom {
+  margin-bottom: map-get($spacing, $size);
+}
+@mixin margin-x {
+  margin-left: map-get($spacing, $size);
+  margin-right: map-get($spacing, $size);
+}
+@mixin margin-y {
+  margin-top: map-get($spacing, $size);
+  margin-bottom: map-get($spacing, $size);
+}
