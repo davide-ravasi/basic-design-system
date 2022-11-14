@@ -11,15 +11,8 @@
   },
   "scripts": {
     "lint": "stylelint './**/*.scss' --custom-syntax postcss-scss",
-    "lint:fix": "yarn lint --fix"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.scss": "yarn lint:fix"
+    "lint:fix": "yarn lint --fix",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "husky": "^8.0.2",
