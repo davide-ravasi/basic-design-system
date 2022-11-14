@@ -13,15 +13,13 @@
     "lint": "stylelint './**/*.scss' --custom-syntax postcss-scss",
     "lint:fix": "yarn lint --fix"
   },
-  "lint-staged": {
-    "src/**/*.scss": [
-      "yarn lint --fix"
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.scss": "yarn lint:fix"
   },
   "devDependencies": {
     "husky": "^8.0.2",
