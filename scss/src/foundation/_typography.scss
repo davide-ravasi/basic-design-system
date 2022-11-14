@@ -63,8 +63,8 @@ $h-6-letter-spacing: var(--dse-h6-letter-spacing, #{$spacing[xxxs]}) !default;
 =            Head line height              =
 =============================================*/
 
-$h-1-line-height: var(--dse-h1-line-height, -map-get($spacing, 'md')) !default;
-$h-2-line-height: var(--dse-h2-line-height, -map-get($spacing, 'xxs')) !default;
+$h-1-line-height: var(--dse-h1-line-height, -map-get($spacing, "md")) !default;
+$h-2-line-height: var(--dse-h2-line-height, -map-get($spacing, "xxs")) !default;
 $h-3-line-height: var(--dse-h3-line-height, $fw-bold) !default;
 $h-4-line-height: var(--dse-h4-line-height, $fw-medium) !default;
 $h-5-line-height: var(--dse-h5-line-height, $fw-normal) !default;

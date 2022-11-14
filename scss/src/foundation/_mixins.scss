@@ -40,6 +40,6 @@
   margin-right: map-get($spacing, $size);
 }
 @mixin margin-y {
-  margin-top: map-get($spacing, $size);
   margin-bottom: map-get($spacing, $size);
+  margin-top: map-get($spacing, $size);
 }

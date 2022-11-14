@@ -6,6 +6,30 @@
   "author": "davide <info@davideravasi.com>",
   "license": "MIT",
   "dependencies": {
-    "normalize.scss": "^0.1.0"
+    "normalize.scss": "^0.1.0",
+    "postcss-scss": "^4.0.5"
+  },
+  "scripts": {
+    "lint": "stylelint './**/*.scss' --custom-syntax postcss-scss",
+    "lint:fix": "yarn lint --fix"
+  },
+  "lint-staged": {
+    "src/**/*.scss": [
+      "yarn lint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.14.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-prettier": "^2.0.0"
   }
 }
